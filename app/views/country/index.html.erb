@@ -1,0 +1,7 @@
+<h1>Ola, <%= @country %></h1>
+
+<% @photos.each do |p| %>
+	<a href="/photos/<%= p.id %>">
+	<img class="country_photo" src="<%= p.url %>"/>
+	</a>
+<% end %> 

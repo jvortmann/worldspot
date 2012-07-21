@@ -1,0 +1,11 @@
+<h1 id="header">Welcome to Worldspot!</h1>
+
+<h1>Countries</h1>
+
+<ul>
+	<% @countries.each do |c| %>
+		<a href="country/index.html?country=<%= c%>"><li><%= c %></li></a>
+	<% end %>
+</ul>
+
+<a href="/photos/new">Upload Photo</a>

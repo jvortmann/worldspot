@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @photo.name %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <img src="<%= @photo.url %>"/>
+</p>
+
+<p>
+  <b>Likes:</b>
+  <div id="likes"><%= @photo.likes %></div>
+  <button id="<%= @photo.id %>" class="country_photo_like">Like</button>
+</p>
+
+<p>
+  <b>Country:</b>
+  <%= @photo.country %>
+</p>
+
+
+<%= link_to 'Edit', edit_photo_path(@photo) %> |
+<%= link_to 'Back', photos_path %>
